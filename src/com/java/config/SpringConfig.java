@@ -30,7 +30,6 @@ public class SpringConfig {
 	@Bean("eTagFilter")
 	public ShallowEtagHeaderFilter getEtag() {
 		ShallowEtagHeaderFilter tag= new ShallowEtagHeaderFilter();
-		tag.setWriteWeakETag(true);
 		return tag;
 	}
 	
